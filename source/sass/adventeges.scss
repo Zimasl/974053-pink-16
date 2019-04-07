@@ -1,0 +1,81 @@
+.adventeges__title-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 202px;
+  height: 139px;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+
+.adventeges__title {
+  font-size: 24px;
+  color:#283645;
+  margin: 0;
+  text-align: center;
+}
+
+.adventeges__item-container {
+display: flex;
+
+flex-direction: column;
+height: 828px;
+background-color: #f2f2f2;
+}
+
+.adventeges__item-container::after {
+  content: "";
+  display: block;
+  height: 320px;
+  width: 157px;
+  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-repeat: no-repeat;
+}
+
+.adventeges__item-container ul {
+  margin: 0 auto;
+  margin-top: 119px;
+  padding: 0;
+}
+
+.adventeges__item {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+}
+
+.adventeges__item h3 {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+}
+
+.adventeges__item p {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #283645;
+}
+
+.adventeges__item--block-1 {
+ width: 252px;
+ height: 99px;
+ margin: 0 auto;
+ margin-bottom: 40px;
+}
+
+.adventeges__item--block-2 {
+ width: 254px;
+ height: 99px;
+ margin: 0 auto;
+ margin-bottom: 38px;
+}
+
+.adventeges__item--block-3 {
+ width: 259px;
+ height: 100px;
+ margin: 0 auto;
+ margin-bottom: 45px;
+}
