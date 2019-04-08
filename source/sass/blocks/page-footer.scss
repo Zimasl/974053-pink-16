@@ -1,0 +1,33 @@
+.page-footer__container {
+  height: 284px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__logo {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.page-footer__social {
+  list-style: none;
+  display: flex;
+  align-content: space-between;
+  margin: 0 auto;
+  margin-top: 43px;
+}
+
+.page-footer__social-icon {
+  width: 46px;
+  height: 46px;
+  margin-right: 17px;
+}
+
+.page-footer__developed {
+  display: flex;
+  color: #283645;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+}
