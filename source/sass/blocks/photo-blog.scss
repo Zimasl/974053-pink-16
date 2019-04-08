@@ -9,10 +9,10 @@
   margin-top: 40px;
   margin-bottom: 56px;
   width: 241px;
-  height: 74px;
+  min-height: 74px;
   font-size: 14px;
   line-height: 30px;
-  color:  #283645;
+  color:  $primary-color;
   text-align: center;
 }
 
@@ -25,14 +25,14 @@
   display: flex;
   background: url(../img/panorama-mobile@1x.jpg);
   background-repeat: no-repeat;
-  height: 137px;
+  min-height: 137px;
 }
 
 .photo-blog__post-panarama span {
   display: flex;
   width: 140px;
   height: 36px;
-  background-color: #d22856;
+  background-color: $primary-color;
   justify-content: center;
   align-items: center;
   color: #ffffff;
@@ -49,13 +49,13 @@
 }
 
 .photo-blog__post-content {
-  background-color: #f2f2f2;
+  background-color: $bg-color;
   margin-bottom: 20px;
 }
 
 .photo-blog__post-author {
   display: flex;
-  color: #283645;
+  color: $primary-color;
   margin-left: 17px;
   margin-top: 25px;
   font-size: 14px;
@@ -81,7 +81,7 @@
   margin: 0;
   margin-left: 50px;
   margin-bottom: 28px;
-  color: #d22856;
+  color: $primary-color;
 }
 
 .photo-blog__post-likes::after {
@@ -91,5 +91,5 @@
   position: absolute;
   background-image: url(../img/icon-heart.svg);
   left: -32px;
-  color: #d22856;
+  color: $primary-color;
 }

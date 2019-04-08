@@ -1,4 +1,4 @@
-.page-footer-container {
+.page-footer__container {
   height: 284px;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   margin-top: 40px;
 }
 
-.footer-social {
+.page-footer__social {
   list-style: none;
   display: flex;
   align-content: space-between;
