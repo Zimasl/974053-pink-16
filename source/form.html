@@ -13,25 +13,25 @@
   <!-- Блок выпадающего меню и хедера -->
   <div class="page-wrap">
     <header class="page-header">
-
-        <a class="page-header__logo" href="index.html">
+      <div class="page-header__wrap">
+        <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип">
         </a>
+      </div>
+      <nav class="main-nav">
         <button class="page-header__toggle" type="button"></button>
-
-      <nav class="main-menu">
-        <ul class="main-menu__list site-list">
-          <li class="main-menu__item main-menu__item--active">
-            <a href="index.html">Главная</a>
+        <ul class="main-nav__list site-list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="photo-blog__picture" href="index.html">Главная</a>
           </li>
-          <li class="main-menu__item">
-            <a href="photo.html">Фотографии</a>
+          <li class="main-nav__item">
+            <a class="photo-blog__picture" href="photo.html">Фотографии</a>
           </li>
-          <li class="main-menu__item">
-            <a href="form.html">Конкурс</a>
+          <li class="main-nav__item">
+            <a class="photo-blog__picture" href="form.html">Конкурс</a>
           </li>
-          <li class="main-menu__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <li class="main-nav__item">
+            <a class="photo-blog__picture" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -51,9 +51,9 @@
         <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo">
       </a>
       <ul class="page-footer__social">
-        <li class="page-footer__social-icon"> <a href="#twitter" title="twitter"></a></li>
-        <li class="page-footer__social-icon"> <a href="#facebook" title="facebook"></a></li>
-        <li class="page-footer__social-icon"> <a href="#youtube" title="youtube"></a></li>
+        <li> <a class="page-footer__social-icon page-footer__social-icon--twitter" href="#twitter" title="twitter"></a></li>
+        <li> <a class="page-footer__social-icon page-footer__social-icon--facebook" href="#facebook" title="facebook"></a></li>
+        <li> <a class="page-footer__social-icon page-footer__social-icon--youtube" href="#youtube" title="youtube"></a></li>
       </ul>
       <a class="page-footer__developed" href="https://echo.htmlacademy.ru">
         <span>Разработано </span>
