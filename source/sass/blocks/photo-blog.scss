@@ -12,6 +12,7 @@
   min-height: 74px;
   font-size: 14px;
   line-height: 30px;
+  font-weight: normal;
   color:  $primary-color;
   text-align: center;
 }
@@ -22,13 +23,12 @@
 }
 
 .photo-blog__post-panarama {
-  display: flex;
-  background: url(../img/panorama-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  min-height: 137px;
+  width: 100%;
+  background: url(../img/panorama-mobile@1x.jpg) no-repeat center;
+  min-height: 136px;
 }
 
-.photo-blog__post-panarama span {
+.photo-blog__marker {
   display: flex;
   width: 140px;
   height: 36px;
@@ -36,7 +36,6 @@
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  margin-left: 160px;
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -49,6 +48,8 @@
 }
 
 .photo-blog__post-content {
+  display: flex;
+  flex-direction: column;
   background-color: $bg-color;
   margin-bottom: 20px;
 }
@@ -84,12 +85,44 @@
   color: $pink-color;
 }
 
-.photo-blog__post-likes::after {
-  content: "";
-  width: 13px;
-  height: 12px;
-  position: absolute;
-  background-image: url(../img/icon-heart.svg);
-  left: -32px;
-  color: $primary-color;
+@media (min-width: $tablet-width) {
+  .photo-blog__title {
+    width: 436px;
+    min-height: 48px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .photo-blog__post-panarama {
+    background: url(../img/panorama-tablet@1x.jpg) no-repeat center;
+    min-height: 509px;
+  }
+
+  .photo-blog__post-1 {
+    display: flex;
+    width: 620px;
+    height: 121px;
+
+  }
+
+  .photo-blog__post-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 620px;
+  }
+
+  .photo-blog__post {
+    display: flex;
+    width: 300px;
+    height: 455px;
+  }
+
+  .photo-blog__post-content {
+
+  }
+
+
+
 }

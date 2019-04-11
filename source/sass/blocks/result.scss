@@ -1,0 +1,49 @@
+.result {
+  display: none;
+}
+
+@media (min-width:$tablet-width) {
+  .result {
+    display: flex;
+    justify-content: center;
+
+
+  }
+  .result__item {
+    width: 295px;
+  }
+
+  .result__title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+
+   .result__link {
+     color: #d22856;
+   }
+}
+
+@media (min-width:$desktop-width) {
+  .result {
+    height: 429px;
+    margin-top: -360px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 496px;
+    margin-right: 179px;
+  }
+
+  .result__item {
+    width: 525px;
+    height: 197px;
+  }
+
+  .result__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+
+}

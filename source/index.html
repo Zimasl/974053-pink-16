@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="fonts/opensansbold.woff" rel="stylesheet">
   <link rel="stylesheet" href="css/normalaze.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -35,7 +36,6 @@
           </li>
         </ul>
       </nav>
-
     </header>
     <main>
 
@@ -61,10 +61,10 @@
       <section class="advanteges">
         <div class="advanteges__title-wrap">
           <p class="advanteges__title">Устали от серости мегаполиcа?</p>
-          <p class="advanteges__title">Нам есть, что вам предложить!</p>
+          <p class="advanteges__title">Нам есть, что вам <br> предложить!</p>
         </div>
         <div class="advanteges__item-container">
-          <ul>
+          <ul class="advanteges_item-wrap">
             <li class="advanteges__item advanteges__item--block-1">
               <h3>Поднимаем настроение</h3>
               <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -79,7 +79,17 @@
             </li>
           </ul>
         </div>
-        <img class="advanteges__image" src="http://placehold.it/150x100" alt="Телефон с нашим приложением, и изображением всем привет!">
+      </section>
+
+      <section class="result">
+        <div class="result__container">
+          <div class="result__item">
+            <h3 class="result__title">Эффект на 24 часа!</h3>
+            <p>Британские ученые провели исследования и доказали, что положительный
+              эффект от использования приложения длится целые сутки!</p>
+            <a class="result__link" href="#result">Узнать больше об исследовании</a>
+          </div>
+        </div>
       </section>
 
       <section class="review-slider">

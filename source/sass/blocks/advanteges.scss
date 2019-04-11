@@ -1,39 +1,25 @@
 .advanteges__title-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 202px;
+  width: 204px;
   min-height: 139px;
   margin: 0 auto;
-  margin-top: 46px;
 }
 
 .advanteges__title {
   font-size: 24px;
-  color:  $primary-color;
-  margin: 0;
+  line-height: normal;
+  color: $primary-color;
   text-align: center;
+  font-weight: 300;
 }
 
 .advanteges__item-container {
-display: flex;
-flex-direction: column;
-min-height: 828px;
-background-color: $bg-color;
-}
-
-.advanteges__item-container::after {
-  content: "";
-  display: block;
-  min-height: 320px;
-  width: 157px;
-  background-image: url(../img/iphone-screen-mobile@1x.png);
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color;
 }
 
 .advanteges__item-container ul {
-  margin: 0 auto;
-  margin-top: 119px;
+  margin: 119px auto 0;
   padding: 0;
 }
 
@@ -41,7 +27,6 @@ background-color: $bg-color;
   display: flex;
   flex-direction: column;
   list-style: none;
-
 }
 
 .advanteges__item h3 {
@@ -59,22 +44,99 @@ background-color: $bg-color;
 }
 
 .advanteges__item--block-1 {
- width: 252px;
- min-height: 99px;
- margin: 0 auto;
- margin-bottom: 40px;
+  width: 252px;
+  min-height: 99px;
+  margin: 0 auto 40px;
 }
 
 .advanteges__item--block-2 {
- width: 254px;
- min-height: 99px;
- margin: 0 auto;
- margin-bottom: 38px;
+  width: 254px;
+  min-height: 99px;
+  margin: 0 auto 38px;
 }
 
 .advanteges__item--block-3 {
- width: 259px;
- min-height: 100px;
- margin: 0 auto;
- margin-bottom: 45px;
+  width: 259px;
+  min-height: 100px;
+  margin: 0 auto 45px;
+}
+
+@media (min-width:$tablet-width) {
+  .advanteges__title-wrap {
+    width: 587px;
+    margin: 0 auto;
+  }
+
+  .advanteges__title {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .advanteges_item-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advanteges__item {
+    display: flex;
+    width: 293px;
+    text-align: left;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .advanteges__title-wrap {
+    min-width: 733px;
+    margin-top: 78px;
+    margin-bottom: 75px;
+  }
+  .advanteges__title {
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .advanteges__item-container {
+    display: flex;
+    height: 716px;
+  }
+
+  .advanteges_item-wrap {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .advanteges__item {
+    font-size: 18px;
+    line-height: 30px;
+
+  }
+
+  .advanteges__item--block-1 {
+    width: 236px;
+    min-height: 197px;
+
+  }
+
+  .advanteges__item--block-2 {
+    width: 222px;
+    min-height: 197px;
+
+  }
+
+  .advanteges__item--block-3 {
+    width: 231px;
+    min-height: 197px;
+
+  }
+
+  .advanteges__item h3 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+
 }
