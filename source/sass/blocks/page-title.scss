@@ -1,16 +1,14 @@
 .page-title {
   display: flex;
   justify-content: center;
-  height: 462px;
   background: url(../img/bg-back-mobile@1x.jpg) no-repeat center;
 }
 
 .page-title__text {
   width: 168px;
-  height: 49px;
   font-size: 24px;
   line-height: normal;
-  color: #ffffff;
+  color: $white;
   text-align: center;
   font-weight: 300;
   margin-top: 35px;
@@ -19,13 +17,11 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
-    height: 729px;
     background: url(../img/bg-back-tablet@1x.jpg) no-repeat center;
   }
 
   .page-title__text {
     width: 470px;
-    height: 138px;
     font-size: 50px;
   }
 
@@ -33,15 +29,11 @@
 
 @media (min-width: $desktop-width) {
   .page-title {
-    height: 853px;
     background: url(../img/bg-back-desktop@1x.jpg) no-repeat center;
   }
 
   .page-title__text {
     width: 739px;
-    height: 111px;
-    font-size: 50px;
-    line-height: normal;
-  }
+    }
 
 }

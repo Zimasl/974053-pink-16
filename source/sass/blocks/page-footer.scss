@@ -1,3 +1,7 @@
+.page-footer {
+  display: none;
+}
+
 .page-footer__container {
   height: 284px;
   display: flex;
@@ -57,6 +61,10 @@
 
 
 @media (min-width: $tablet-width) {
+    .page-footer {
+      display: block;
+    }
+
     .page-footer__container {
       height: 127px;
       width: 660px;
@@ -74,8 +82,7 @@
 
   @media (min-width: $desktop-width) {
     .page-footer__container {
-      height: 197px;
-      width: 1200px;
+      width: 960px;
       margin: 0 auto;
     }
 

@@ -19,7 +19,6 @@
 }
 
 .advanteges__item-container ul {
-  margin: 119px auto 0;
   padding: 0;
 }
 
@@ -61,10 +60,21 @@
   margin: 0 auto 45px;
 }
 
+@media (max-width:659px){
+  .advanteges__item-container::after {
+      content: '';
+      display: block;
+      height: 320px;
+      background: url(../img/iphone-screen-mobile@1x.png) no-repeat center 50px;
+  }
+}
+
 @media (min-width:$tablet-width) {
   .advanteges__title-wrap {
+    position: relative;
     width: 587px;
-    margin: 0 auto;
+    padding-top: 59px;
+    padding-bottom: 22px;
   }
 
   .advanteges__title {
@@ -73,16 +83,64 @@
   }
 
   .advanteges_item-wrap {
+    @include center;
+    width: 660px;
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
   }
 
+
+
   .advanteges__item {
-    display: flex;
-    width: 293px;
-    text-align: left;
+    margin-left: 332px;
+    margin-bottom: 40px;
+    width: 306px;
+    p {
+      text-align:left;
+      margin: 0;
+      margin-top: 21px;
+    }
+    h3 {
+      text-align: left;
+    }
   }
+
+@media (max-width: 959px) {
+
+  .result__item {
+    position: relative;
+    margin-top: 102px;
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 238px;
+      height: 276px;
+      right: 375px;
+      top: -50px;
+      background: url(../img/icon-timer.svg) no-repeat center;
+      background-size: cover;
+    }
+
+    .advanteges_item-wrap::before {
+      position: absolute;
+      content: '';
+      display: block;
+      height: 547px;
+      width:268px;
+      top: -60px;
+      background: url(../img/iphone-screen-3-tablet@1x.png) no-repeat center;
+    }
+  }
+
+}
+
+  .result__title {
+    margin-top: 0;
+  }
+
 }
 
 @media (min-width:$desktop-width) {
@@ -98,43 +156,43 @@
 
   .advanteges__item-container {
     display: flex;
-    height: 716px;
   }
 
+  .advanteges__item {
+      margin-left: 0;
+  }
+
+
   .advanteges_item-wrap {
-    width: 940px;
     display: flex;
+    width: 940px;
     flex-direction: row;
   }
 
   .advanteges__item {
     font-size: 18px;
     line-height: 30px;
-
   }
 
   .advanteges__item--block-1 {
     width: 236px;
     min-height: 197px;
-
   }
 
   .advanteges__item--block-2 {
     width: 222px;
     min-height: 197px;
-
   }
 
   .advanteges__item--block-3 {
     width: 231px;
     min-height: 197px;
-
   }
 
   .advanteges__item h3 {
     font-size: 30px;
     line-height: 30px;
-    color: #000000;
+    color: $black;
     margin-bottom: 30px;
   }
 

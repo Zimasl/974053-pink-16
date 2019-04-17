@@ -5,30 +5,32 @@
 @media (min-width:$tablet-width) {
   .result {
     display: flex;
-    justify-content: center;
-
-
   }
+
+  .result__container {
+    width: 660px;
+    @include center;
+  }
+
   .result__item {
+    margin-left: 329px;
     width: 295px;
   }
 
   .result__title {
     font-size: 30px;
     line-height: 36px;
-    color: #000000;
+    color: $black;
     margin-bottom: 15px;
   }
 
    .result__link {
-     color: #d22856;
+     color: $pink-color;
    }
 }
 
 @media (min-width:$desktop-width) {
   .result {
-    height: 429px;
-    margin-top: -360px;
     font-size: 18px;
     line-height: 30px;
     margin-left: 496px;
@@ -36,8 +38,8 @@
   }
 
   .result__item {
+    margin-left: 0;
     width: 525px;
-    height: 197px;
   }
 
   .result__title {

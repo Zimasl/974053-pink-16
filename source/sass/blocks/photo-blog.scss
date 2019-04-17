@@ -28,25 +28,24 @@
   display: flex;
   justify-content: center;
   img {
-    width: 100%;
+    width: 320px;
   }
 }
 
 .photo-blog__post-panarama::before {
     position: absolute;
     top: 0;
-    right: 4%;
+    right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     content: "Панорама дня";
     width: 140px;
-    height: 36px;
     font-size: 12px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #ffffff;
-    background-color: #d22856;
+    color: $white;
+    background-color: $pink-color;
 }
 
 .photo-blog__picture img{
@@ -121,10 +120,6 @@
     line-height: 30px;
   }
 
-  .photo-blog__post-panarama {
-    background: url(../img/panorama-tablet@1x.jpg) no-repeat center;
-    min-height: 509px;
-  }
 
   .photo-blog__first {
     margin-bottom: 80px;
@@ -138,7 +133,6 @@
   .photo-blog__post-1 {
     display: flex;
     min-width: 620px;
-    height: 121px;
   }
 
   .photo-blog__post-wrap {
@@ -151,13 +145,12 @@
 
   .photo-blog__post-content {
     align-content: space-around;
-    height: 155px;
+
   }
 
   .photo-blog__post {
     display: flex;
     width: 300px;
-    max-height: 455px;
   }
 
     .photo-blog__post-likes {
@@ -170,7 +163,7 @@
 @media (min-width: $desktop-width) {
     .photo-blog__title {
       width: 568px;
-      height: 48px;
+
     }
 
     .photo-blog__post-panarama::before {
@@ -180,10 +173,9 @@
 
       .photo-blog__post-1 {
         min-width: 940px;
-        height: 96px;
       }
 
       .photo-blog__post-wrap {
-          min-width: 940px;
+          width: 940px;
       }
 }
