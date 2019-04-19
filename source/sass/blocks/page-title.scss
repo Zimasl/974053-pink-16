@@ -1,6 +1,9 @@
 .page-title {
   display: flex;
   justify-content: center;
+  height: 320px;
+  width: 462px;
+  margin: 0 auto;
   background: url(../img/bg-back-mobile@1x.jpg) no-repeat center;
 }
 
@@ -17,7 +20,10 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
+    width: 660px;
+
     background: url(../img/bg-back-tablet@1x.jpg) no-repeat center;
+
   }
 
   .page-title__text {
