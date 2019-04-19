@@ -8,8 +8,7 @@
   }
 
   .result__container {
-    width: 660px;
-    @include center;
+    @include container (660px, 0px);
   }
 
   .result__item {
@@ -31,10 +30,10 @@
 
 @media (min-width:$desktop-width) {
   .result {
-    font-size: 18px;
+        font-size: 18px;
     line-height: 30px;
-    margin-left: 496px;
-    margin-right: 179px;
+    background-color: $bg-color;
+
   }
 
   .result__item {
@@ -46,6 +45,11 @@
     font-size: 30px;
     line-height: 30px;
   }
+
+  .result__container {
+    @include container (940px, 0px);
+    display: flex;
+    }
 
 
 }

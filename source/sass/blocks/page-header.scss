@@ -1,7 +1,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  background-color: $primary-color;
+  background : $primary-color;
 }
 
 .page-header__logo img {
@@ -12,11 +12,13 @@
   margin-right: 0;
 }
 
+.page-header__wrap {
+ background-color: rgba(40, 54, 69, 0.3)
+}
+
 
 .page-header__wrap {
-    width: 320px;
-    margin: 0 auto;
-    max-width: 100%;
+    @include container (320px, 0);
 
 }
 
