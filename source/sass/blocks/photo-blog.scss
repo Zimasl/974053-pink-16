@@ -5,50 +5,65 @@
 
 .photo-blog__title {
   display: flex;
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 56px;
+  margin: 40px auto 56px;
   width: 241px;
   min-height: 74px;
   font-size: 14px;
   line-height: 30px;
-  color:  $primary-color;
+  font-weight: normal;
+  color: $primary-color;
   text-align: center;
 }
 
 .photo-blog__post {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0;
 }
 
 .photo-blog__post-panarama {
-  display: flex;
-  background: url(../img/panorama-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  min-height: 137px;
+  @include container (320px, 0);
 }
 
-.photo-blog__post-panarama span {
+.photo-blog__post-panarama img {
+  position: relative;
+  width: 320px;
+}
+
+.photo-blog__post-panarama img::before {
+  position: absolute;
+  top: 0;
+  right: 10px;
   display: flex;
-  width: 140px;
-  height: 36px;
-  background-color: $pink-color;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
-  margin-left: 160px;
-  text-transform: uppercase;
+  content: "Панорама дня";
+  width: 140px;
+  height: 36px;
   font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $pink-color;
+}
+
+.photo-blog__picture img {
+  width: 100%;
 }
 
 .photo-blog__post-wrap {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
 }
 
 .photo-blog__post-content {
+  display: flex;
+  min-height: 121px;
+  justify-content: space-between;
+  flex-direction: column;
   background-color: $bg-color;
   margin-bottom: 20px;
 }
@@ -62,15 +77,11 @@
   line-height: 24px;
 }
 
-.photo-blog__post-author span {
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
 .photo-blog__post-content p {
   display: flex;
   margin-left: 17px;
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 24px;
 }
@@ -78,18 +89,84 @@
 .photo-blog__post-likes {
   display: flex;
   position: relative;
-  margin: 0;
   margin-left: 50px;
   margin-bottom: 28px;
   color: $pink-color;
 }
 
-.photo-blog__post-likes::after {
-  content: "";
-  width: 13px;
-  height: 12px;
-  position: absolute;
-  background-image: url(../img/icon-heart.svg);
-  left: -32px;
-  color: $primary-color;
+.photo-blog__panarama-wrap {
+  background-color: $bg-color;
+}
+
+.photo-blog__panarama-wrap p {
+  margin-left: 17px;
+}
+
+.photo-blog__post-author span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+// Планшет
+@media (min-width: $tablet-width) {
+  .photo-blog__title {
+    width: 436px;
+    min-height: 48px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .photo-blog__first {
+    margin-bottom: 80px;
+  }
+
+  .photo-blog__post-1 {
+    display: flex;
+    min-width: 620px;
+  }
+
+  .photo-blog__post-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 620px;
+  }
+
+  .photo-blog__post-content {
+    min-height: 155px;
+  }
+
+  .photo-blog__post {
+    display: flex;
+    width: 300px;
+  }
+
+  .photo-blog__post-likes {
+    margin: 0 0 20px 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-blog__title {
+    width: 568px;
+  }
+
+  .photo-blog__post-1 {
+    @include container (940px, 0);
+  }
+
+  .photo-blog__panarama-wrap {
+    width: 940px;
+  }
+
+  .photo-blog__post-wrap {
+    width: 940px;
+  }
+
+  .photo-blog__post-content {
+    height: 150px;
+    display: flex;
+    align-content: space-around;
+  }
 }

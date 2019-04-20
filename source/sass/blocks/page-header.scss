@@ -1,27 +1,56 @@
 .page-header {
   display: flex;
-  background-color: #283645;
   flex-direction: column;
+  background : $primary-color;
+}
+
+.page-header__logo img {
+  display: block;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: 20px;
+  margin-right: 0;
 }
 
 .page-header__wrap {
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
+ background-color: rgba(40, 54, 69, 0.3)
 }
 
-.page-header__logo {
-  display: flex;
-  width: 75px;
-  height: 22px;
-  margin-right: 200px;
+
+.page-header__wrap {
+    @include container (320px, 0);
+
 }
 
 .page-header__toggle {
-  display: flex;
-  width: 24px;
-  height: 23px;
-  background-image: url("../img/icon-menu-cross.svg");
-  border: 0;
-  background-color: transparent;
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo img {
+    width: 147px;
+    height: 40px;
+    margin-top: 27px;
+    margin-bottom: 43px;
+  }
+
+  .page-header__wrap {
+    width: 660px;
+
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .page-header__logo img {
+    margin-left: 130px;
+
+  }
+
 }

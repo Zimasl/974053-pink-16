@@ -1,39 +1,25 @@
 .advanteges__title-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 202px;
+  width: 204px;
   min-height: 139px;
   margin: 0 auto;
-  margin-top: 46px;
 }
 
 .advanteges__title {
   font-size: 24px;
-  color:  $primary-color;
-  margin: 0;
+  line-height: normal;
+  color: $primary-color;
   text-align: center;
+  font-weight: 300;
 }
 
 .advanteges__item-container {
-display: flex;
-flex-direction: column;
-min-height: 828px;
-background-color: $bg-color;
-}
-
-.advanteges__item-container::after {
-  content: "";
-  display: block;
-  min-height: 320px;
-  width: 157px;
-  background-image: url(../img/iphone-screen-mobile@1x.png);
-  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color;
 }
 
 .advanteges__item-container ul {
-  margin: 0 auto;
-  margin-top: 119px;
   padding: 0;
 }
 
@@ -41,7 +27,6 @@ background-color: $bg-color;
   display: flex;
   flex-direction: column;
   list-style: none;
-
 }
 
 .advanteges__item h3 {
@@ -59,22 +44,164 @@ background-color: $bg-color;
 }
 
 .advanteges__item--block-1 {
- width: 252px;
- min-height: 99px;
- margin: 0 auto;
- margin-bottom: 40px;
+  width: 252px;
+  margin: 0 auto 40px;
 }
 
 .advanteges__item--block-2 {
- width: 254px;
- min-height: 99px;
- margin: 0 auto;
- margin-bottom: 38px;
+  width: 254px;
+  margin: 0 auto 38px;
 }
 
 .advanteges__item--block-3 {
- width: 259px;
- min-height: 100px;
- margin: 0 auto;
- margin-bottom: 45px;
+  width: 259px;
+  margin: 0 auto 45px;
 }
+
+.advantege-picture {
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width:$tablet-width) {
+
+  .advanteges__title-wrap {
+    position: relative;
+    width: 587px;
+    padding-top: 59px;
+    padding-bottom: 22px;
+  }
+
+  .advanteges__title {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .advanteges_item-wrap {
+    @include container (320px, 0);
+    width: 660px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .advanteges__item {
+    margin-left: 332px;
+    margin-bottom: 40px;
+    width: 306px;
+
+    p {
+      text-align: left;
+      margin: 21px 0 0;
+    }
+
+    h3 {
+      text-align: left;
+    }
+  }
+
+  .advantege-picture {
+    display: none;
+  }
+
+  }
+  @media (min-width:$desktop-width) {
+
+    .advanteges__title-wrap {
+      padding: 0;
+      min-width: 733px;
+      margin-top: 78px;
+      margin-bottom: 75px;
+    }
+
+    .advanteges__title {
+      font-size: 50px;
+      margin: 0;
+    }
+
+    .advanteges__item-container {
+      background-color: $bg-color;
+    }
+
+    .advanteges__item {
+      margin-left: 0;
+    }
+
+    .advanteges_item-wrap {
+      display: flex;
+      justify-content: space-around;
+      @include container (940px, 0) flex-direction: row;
+    }
+
+    .advanteges__item {
+      margin: 300px 0 0;
+      font-size: 18px;
+      line-height: 30px;
+
+      h3 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        margin: 0;
+      }
+    }
+
+    .advanteges__item--block-1 {
+      width: 236px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 186px;
+        height: 328px;
+        bottom: 270px;
+        left: 28px;
+        background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat center;
+      }
+    }
+
+    .advanteges__item--block-2 {
+      width: 222px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 186px;
+        height: 328px;
+        bottom: 270px;
+        left: 28px;
+        background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat center;
+      }
+    }
+
+    .advanteges__item--block-3 {
+      width: 231px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 186px;
+        height: 328px;
+        bottom: 270px;
+        left: 28p x;
+        background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat center;
+      }
+    }
+
+    .advanteges__item h3 {
+      font-size: 30px;
+      line-height: 30px;
+      color: $black;
+      margin-bottom: 30px;
+    }
+  }
