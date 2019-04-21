@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/normalaze.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,146 +15,159 @@
     <header class="page-header">
       <div class="page-header__wrap">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип">
+          <picture>
+            <source media="(min-width: $desktop-width)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: $tablet-width)" srcset="imglogo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          </picture>
         </a>
-        <button class="page-header__toggle" type="button"></button>
+        <nav class="main-nav main-nav--nojs">
+          <button class="main-nav__toggle" type="button"> <span class="visually-hidden">Открыть меню</span> </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+        </nav>
       </div>
-      <nav class="main-menu">
-        <ul class="main-menu__list site-list">
-          <li class="main-menu__item main-menu__item--active">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="page-title">
-        <h1 class="page-title__text">Фотографии пользователей</h1>
-      </div>
-      <!-- Основной блок с фотографиями пользователей -->
-      <div class="photo-blog">
-        <h2 class="photo-blog__title">Взгляни на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+  </div>
+  </header>
 
-        <article class="photo-blog__post">
-          <div class="photo-blog__post-panarama">
-            <span class="photo-blog__marker">Панорама дня</span>
-          </div>
-          <div class="photo-blog__post-wrap">
-            <div class="photo-blog__post-content">
-              <div class="photo-blog__post-author">
-                <b>Анна</b>
-                <span class="photo-blog__post-time">(5 минут назад)</span>
-              </div>
-              <p>Прыгать или нет? Напишите в коментарии свой совет
-                и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-              <span class="photo-blog__post-likes">Нравится: 215</span>
+  <main>
+    <div class="page-title">
+      <h1 class="page-title__text">Фотографии пользователей</h1>
+    </div>
+    <!-- Основной блок с фотографиями пользователей -->
+    <div class="photo-blog">
+      <h2 class="photo-blog__title">Взгляни на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+      <article class="photo-blog__first">
+        <div class="photo-blog__post-panarama">
+          <img src="img/panorama-mobile@1x.jpg"  width="320px" height="137px" alt="panarama">
+        </div>
+        <div class="photo-blog__post1-wrap">
+          <div class="photo-blog__post1">
+            <div class="photo-blog__post-author">
+              <b>Анна </b>
+              <span class="photo-blog__post-time"> (5 минут назад)</span>
             </div>
+            <p>Прыгать или нет? Напишите в коментарии свой совет
+              и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+            <span class="photo-blog__post-likes ">Нравится: 215</span>
+          </div>
+        </div>
+      </article>
+
+
+      <div class="photo-blog__post-wrap">
+        <article class="photo-blog__post">
+          <a class="photo-blog__picture" href="#">
+            <picture>
+              <source media="(min-width: $desktop-width)" srcset="img/photo-car-desktop@1x.jpg">
+              <source media="(min-width: $tablet-width)" srcset="img/photo-car-tablet@1x.jpg">
+              <img src="img/photo-car-mobile@1x.jpg" alt="car">
+            </picture>
+          </a>
+          <div class="photo-blog__post-content">
+            <div class="photo-blog__post-author">
+              <b>Левон</b>
+              <span class="photo-blog__post-time">(5 часов назад)</span>
+            </div>
+            <p>Вчера он на луну летал, сегодня в <br> руки к нам попал</p>
+            <span class="photo-blog__post-likes">Нравится: 356</span>
           </div>
         </article>
 
-        <div class="photo-blog__post-wrap">
-          <article class="photo-blog__post">
-            <a href="#">
-              <img src="img/photo-car-mobile@1x.jpg" alt="car">
-            </a>
-            <div class="photo-blog__post-content">
-              <div class="photo-blog__post-author">
-                <b>Левон</b>
-                <span class="photo-blog__post-time">(5 часов назад)</span>
-              </div>
-              <p>Вчера он на луну летал, сегодня в руки к нам попал</p>
-              <span class="photo-blog__post-likes">Нравится: 356</span>
+        <article class="photo-blog__post">
+          <a class="photo-blog__picture" href="#">
+            <img src="img/photo-drumset-mobile@1x.jpg" alt="drum">
+          </a>
+          <div class="photo-blog__post-content">
+            <div class="photo-blog__post-author">
+              <b>Антон</b>
+              <span class="photo-blog__post-time">(12 часов назад)</span>
             </div>
-          </article>
+            <p>Соседи будут рады!</p>
+            <span class="photo-blog__post-likes">Нравится: 666</span>
+          </div>
+        </article>
+        <article class="photo-blog__post">
+          <a class="photo-blog__picture" href="#">
+            <img src="img/photo-window-mobile@1x.jpg" alt="skyscraper">
+          </a>
+          <div class="photo-blog__post-content">
+            <div class="photo-blog__post-author">
+              <b>Борис </b>
+              <span class="photo-blog__post-time">(20 часов назад)</span>
+            </div>
+            <p>Здесь могла быть ваша цитата о высоком и вечном</p>
+            <span class="photo-blog__post-likes">Нравится: 215</span>
+          </div>
+        </article>
+        <article class="photo-blog__post">
+          <a class="photo-blog__picture" href="#">
+            <img src="img/photo-fair-mobile@1x.jpg" alt="kuban">
+          </a>
+          <div class="photo-blog__post-content">
+            <div class="photo-blog__post-author">
+              <b>Сергей</b>
+              <span class="photo-blog__post-time">(25 часов назад)</span>
+            </div>
+            <p>Самая кубанская в мире</p>
+            <span class="photo-blog__post-likes">Нравится: 4</span>
+          </div>
+        </article>
 
-          <article class="photo-blog__post">
-            <a href="#">
-              <img src="img/photo-drumset-mobile@1x.jpg" alt="drum">
-            </a>
-            <div class="photo-blog__post-content">
-              <div class="photo-blog__post-author">
-                <b>Антон</b>
-                <span class="photo-blog__post-time">(12 часов назад)</span>
-              </div>
-              <p>Соседи будут рады!</p>
-              <span class="photo-blog__post-likes">Нравится: 666</span>
+        <article class="photo-blog__post">
+          <a class="photo-blog__picture" href="#">
+            <img src="img/photo-pov-mobile@1x.jpg" alt="landscape">
+          </a>
+          <div class="photo-blog__post-content">
+            <div class="photo-blog__post-author">
+              <b>Максим</b>
+              <span class="photo-blog__post-time">(40 часов назад)</span>
             </div>
-          </article>
-          <article class="photo-blog__post">
-            <a href="#">
-              <img src="img/photo-window-mobile@1x.jpg" alt="skyscraper">
-            </a>
-            <div class="photo-blog__post-content">
-              <div class="photo-blog__post-author">
-                <b>Борис </b>
-                <span class="photo-blog__post-time">(20 часов назад)</span>
-              </div>
-              <p>Здесь могла быть ваша цитата о высоком и вечном</p>
-              <span class="photo-blog__post-likes">Нравится: 215</span>
+            <p>Где снег-то?</p>
+            <span class="photo-blog__post-likes">Нравится: 150</span>
+          </div>
+        </article>
+        <article class="photo-blog__post">
+          <a class="photo-blog__picture" href="#">
+            <img src="img/photo-wing-mobile@1x.jpg" alt="aircraft">
+          </a>
+          <div class="photo-blog__post-content">
+            <div class="photo-blog__post-author">
+              <b>Надежда</b>
+              <span class="photo-blog__post-time">(45 часов назад)</span>
             </div>
-          </article>
-          <article class="photo-blog__post">
-            <a href="#">
-              <img src="img/photo-fair-mobile@1x.jpg" alt="kuban">
-            </a>
-            <div class="photo-blog__post-content">
-              <div class="photo-blog__post-author">
-                <b>Сергей</b>
-                <span class="photo-blog__post-time">(25 часов назад)</span>
-              </div>
-              <p>Самая кубанская в мире</p>
-              <span class="photo-blog__post-likes">Нравится: 4</span>
-            </div>
-          </article>
-          <article class="photo-blog__post">
-            <a href="#">
-              <img src="img/photo-pov-mobile@1x.jpg" alt="landscape">
-            </a>
-            <div class="photo-blog__post-content">
-              <div class="photo-blog__post-author">
-                <b>Максим</b>
-                <span class="photo-blog__post-time">(40 часов назад)</span>
-              </div>
-              <p>Где снег-то?</p>
-              <span class="photo-blog__post-likes">Нравится: 150</span>
-            </div>
-          </article>
-          <article class="photo-blog__post">
-            <a href="#">
-              <img src="img/photo-wing-mobile@1x.jpg" alt="aircraft">
-            </a>
-            <div class="photo-blog__post-content">
-              <div class="photo-blog__post-author">
-                <b>Надежда</b>
-                <span class="photo-blog__post-time">(45 часов назад)</span>
-              </div>
-              <p>Всем GM и взаимные лайки!</p>
-              <span class="photo-blog__post-likes">Нравится: 2560</span>
-            </div>
-          </article>
-        </div>
+            <p>Всем GM и взаимные лайки!</p>
+            <span class="photo-blog__post-likes">Нравится: 2560</span>
+          </div>
+        </article>
       </div>
-      <!-- Блок с формой настройки и редактоирования фото -->
-    </main>
+    </div>
+    <!-- Блок с формой настройки и редактоирования фото -->
+  </main>
   </div>
+
   <footer class="page-footer">
     <div class="page-footer__container">
       <a class="page-footer__logo" href="index.html">
         <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo">
       </a>
       <ul class="page-footer__social">
-        <li class="page-footer__social-icon"> <a href="#twitter" title="twitter"></a></li>
-        <li class="page-footer__social-icon"> <a href="#facebook" title="facebook"></a></li>
-        <li class="page-footer__social-icon"> <a href="#youtube" title="youtube"></a></li>
+        <li> <a class="page-footer__social-icon page-footer__social-icon--twitter" href="#twitter" title="twitter"></a></li>
+        <li> <a class="page-footer__social-icon page-footer__social-icon--facebook" href="#facebook" title="facebook"></a></li>
+        <li> <a class="page-footer__social-icon page-footer__social-icon--youtube" href="#youtube" title="youtube"></a></li>
       </ul>
       <a class="page-footer__developed" href="https://echo.htmlacademy.ru">
         <span>Разработано </span>
@@ -161,5 +175,20 @@
       </a>
     </div>
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+    navMain.classList.remove('main-nav--nojs');
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 
 </body>

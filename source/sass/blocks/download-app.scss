@@ -1,16 +1,28 @@
+.download-app {
+  background-color: $primary-color;
+}
+
 .download-app::before {
   content: "";
   display: block;
-  min-height: 462px;
-  background: url(../img/iphone-hand-mobile@1x.png) no-repeat 40% bottom,
-              url(../img/bg-back-mobile@1x.jpg) no-repeat center;
+  width: 320px;
+  height: 462px;
+  background:  url(../img/bg-back-mobile@1x.jpg) no-repeat center;
+  background-size: cover, contain;
+  margin: 0 auto;
 }
 
 .download-app__content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   min-height: 271px;
-  background-color: $primary-color;
+  background-color: $second-color;
+}
+
+.download-app__title {
+  display: none;
 }
 
 .download-app__button {
@@ -19,27 +31,119 @@
   min-height: 55px;
   justify-content: center;
   align-items: center;
-  border: 3px solid #ffffff;
+  border: 3px solid $white;
   border-radius: 30px;
   margin: 0 auto;
   margin-top: 28px;
+  margin-bottom: 32px;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
 }
 
 .download-app__stage {
+  @include container (320px, 0)
+  justify-content: space-around;
+  align-items: center;
   display: flex;
   list-style: none;
 }
 
 .download-app__text {
-  display: flex;
-  width: 229px;
-  color: #ffffff;
-  margin-top: 29px;
-  margin-left: 45px;
+  width: 230px;
+
+  color: $white;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+
+.download-app__icon {
+  display: block;
+}
+
+.download-app__icon--apple {
+  width: 47px;
+  height: 56px;
+  background: url(../img/logo-apple.svg) no-repeat center;
+}
+
+.download-app__icon--android {
+  width: 43px;
+  height: 47px;
+  background: url(../img/logo-android.svg) no-repeat center;
+}
+
+.download-app__icon--microsoft {
+  width: 44px;
+  height: 41px;
+  background: url(../img/logo-microsoft.svg) no-repeat center;
+}
+
+
+@media (min-width:$tablet-width) {
+  .download-app {
+    display: flex;
+    min-height: 660px;
+    background: url(../img/bg-back-tablet@1x.jpg) no-repeat center;
+  }
+
+  .download-app::before {
+    display: none;
+  }
+
+  .download-app__title {
+    display: flex;
+    align-content: space-around;
+    color: $white;
+    font-size: 40px;
+    line-height: normal;
+    width: 186px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .download-app__content-wrapper {
+    @include container ($tablet-width, 0)
+  }
+
+  .download-app__content {
+    @include container ($tablet-width, 20px);
+    padding-right: 340px;
+    background-color: transparent;
+  }
+}
+
+
+@media (min-width:$desktop-width) {
+  .download-app {
+    background-image: url(../img/bg-back-desktop@1x.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .download-app__content-wrapper {
+    @include container ($desktop-width, 0)
+  }
+
+  .download-app__content {
+    @include container ($desktop-width, 10px)
+    padding-right: 610px;
+  }
+
+  .download-app__title {
+    display: flex;
+    color: $white;
+    font-size: 50px;
+    width: 231px;
+    min-height: 157px;
+  }
+
+  .download-app__text {
+    width: 294px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+  }
 }
