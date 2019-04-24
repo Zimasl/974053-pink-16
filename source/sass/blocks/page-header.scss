@@ -4,9 +4,11 @@
   background : $primary-color;
 }
 
+
 .page-header__logo  {
   display: block;
   width: 75px;
+
 
   margin-top: 22px;
   margin-bottom: 22px;
@@ -20,7 +22,9 @@
 
 
 .page-header__wrap {
+
     @include container ($mobile-width, 0);
+
 }
 
 .page-header__toggle {
@@ -28,7 +32,9 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .page-header__logo {
+
     width: 147px;
     height: 40px;
     margin-top: 27px;
@@ -36,18 +42,20 @@
   }
 
   .page-header__wrap {
+
     @include container (660px, 0)
+
 
   }
 
 }
 
 @media (min-width: $desktop-width) {
+
   .page-header__wrap {
     display: flex;
     flex-direction: row;
     @include container (960px, 0);
   }
-
 
 }

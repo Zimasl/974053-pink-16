@@ -40,6 +40,7 @@
 }
 
 .photo-blog__post-panarama::before {
+
   position: absolute;
   top: 0;
   right: 10px;
@@ -115,23 +116,28 @@
   font-size: 12px;
   text-transform: uppercase;
 }
+
 // Планшет
 @media (min-width: $tablet-width) {
   .photo-blog {
     @include container ($tablet-width, 0);
   }
 
+
   .photo-blog__title {
     width: 436px;
     min-height: 48px;
     font-size: 18px;
     line-height: 30px;
+
     margin: 100px auto 80px;
+
   }
 
   .photo-blog__first {
     margin-bottom: 80px;
   }
+
 
   .photo-blog__post-panarama {
     width: 660px;
@@ -155,6 +161,7 @@
 
   .photo-blog__post1-wrap {
     @include container ($tablet-width, 0);
+
   }
 
   .photo-blog__post-wrap {
@@ -178,6 +185,7 @@
     margin: 0 0 20px 28px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .photo-blog {
     @include container ($desktop-width, 0);
@@ -205,6 +213,7 @@
   .photo-blog__post-panarama::before {
     top: 56px;
     right: 130px;
+
   }
 
   .photo-blog__panarama-wrap {

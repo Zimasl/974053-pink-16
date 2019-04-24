@@ -4,17 +4,22 @@
 
 .download-app::before {
   content: "";
+
   display: block;
   width: 320px;
   height: 462px;
   background:  url(../img/bg-back-mobile@1x.jpg) no-repeat center;
   background-size: cover, contain;
+
   margin: 0 auto;
 }
+
+
 
 .download-app__content {
   display: flex;
   flex-direction: column;
+
   align-items: center;
 
   min-height: 271px;
@@ -42,7 +47,9 @@
 }
 
 .download-app__stage {
+
   @include container (320px, 0)
+
   justify-content: space-around;
   align-items: center;
   display: flex;
@@ -57,7 +64,9 @@
   line-height: 24px;
   text-align: center;
   font-weight: 300;
+
   margin-bottom: 35px;
+
 }
 
 .download-app__icon {
@@ -102,6 +111,7 @@
     line-height: normal;
     width: 186px;
     text-align: center;
+
     font-weight: 300;
   }
 
@@ -114,11 +124,13 @@
     padding-right: 340px;
     background-color: transparent;
   }
+
 }
 
 
 @media (min-width:$desktop-width) {
   .download-app {
+
     background-image: url(../img/bg-back-desktop@1x.jpg) no-repeat center;
     background-size: cover;
   }
@@ -130,6 +142,7 @@
   .download-app__content {
     @include container ($desktop-width, 10px)
     padding-right: 610px;
+
   }
 
   .download-app__title {
