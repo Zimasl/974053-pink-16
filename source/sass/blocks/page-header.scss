@@ -22,7 +22,9 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .page-header__logo {
+
     width: 147px;
     height: 40px;
     margin-top: 27px;
@@ -30,11 +32,13 @@
   }
 
   .page-header__wrap {
+
     @include container (660px, 0)
   }
 }
 
 @media (min-width: $desktop-width) {
+
   .page-header__wrap {
     display: flex;
     flex-direction: row;

@@ -9,6 +9,7 @@
 
 .download-app::before {
   content: "";
+
   display: block;
   width: 320px;
   height: 462px;
@@ -21,9 +22,12 @@
   }
 }
 
+
+
 .download-app__content {
   display: flex;
   flex-direction: column;
+
   align-items: center;
   min-height: 271px;
   background-color: $second-color;
@@ -48,7 +52,8 @@
 }
 
 .download-app__stage {
-  @include container (320px, 0) justify-content: space-around;
+  @include container (320px, 0)
+  justify-content: space-around;
   align-items: center;
   display: flex;
   list-style: none;
@@ -61,6 +66,7 @@
   line-height: 24px;
   text-align: center;
   font-weight: 300;
+
   margin-bottom: 35px;
 
 }
@@ -110,6 +116,7 @@
     line-height: normal;
     width: 186px;
     text-align: center;
+
     font-weight: 300;
   }
 
@@ -132,6 +139,7 @@
     padding-right: 340px;
     background-color: transparent;
   }
+
 }
 @media (min-width:$desktop-width) {
   .download-app {
@@ -148,7 +156,8 @@
   }
 
   .download-app__content {
-    @include container ($desktop-width, 10px) padding-right: 610px;
+    @include container ($desktop-width, 10px)
+    padding-right: 610px;
   }
 
   .download-app__title {

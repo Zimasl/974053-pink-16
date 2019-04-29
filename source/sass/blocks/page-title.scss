@@ -26,6 +26,7 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
+
     @include container ($tablet-width, 0)
     height: 440px;
     background: url(../img/bg-back-tablet@1x.jpg) no-repeat center;
@@ -46,6 +47,7 @@
 
 @media (min-width: $desktop-width) {
   .page-title {
+
     @include container ($desktop-width, 0);
     height: 395px;
     background: url(../img/bg-back-desktop@1x.jpg) no-repeat center;

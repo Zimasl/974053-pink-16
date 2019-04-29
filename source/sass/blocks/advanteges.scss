@@ -96,7 +96,9 @@
   }
 
   .advanteges_item-wrap {
+
     @include container (660px, 0);
+
     position: relative;
     display: flex;
     flex-direction: column;
@@ -112,10 +114,12 @@
       text-align: left;
       margin: 21px 0 0;
     }
+
   }
 
   .advanteges__item h3 {
     text-align: left;
+
   }
 
   .advantege-picture {
