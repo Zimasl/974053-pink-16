@@ -1,5 +1,5 @@
 .page-footer {
-  display: block;
+  display: none;
 }
 
 .page-footer__container {
@@ -29,22 +29,16 @@
   border-radius: 25px;
 }
 
-.page-footer__social-icon--twitter {
-  background: url("../img/icon-twitter.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.page-footer__social-icon--twitter svg {
+
 }
 
 .page-footer__social-icon--facebook {
-  background: url("../img/icon-facebook.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+
 }
 
 .page-footer__social-icon--youtube {
-  background: url("../img/icon-youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+
 }
 
 .page-footer__developed {
@@ -62,6 +56,8 @@
   }
 
   .page-footer__container {
+    display: flex;
+    justify-content: space-around;
     height: 127px;
     @include container (660px, 0)
     flex-direction: row;

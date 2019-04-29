@@ -1,26 +1,20 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  background : $primary-color;
+  background: $primary-color;
 }
 
-.page-header__logo  {
+.page-header__logo {
   display: block;
-  width: 75px;
-
-  margin-top: 22px;
-  margin-bottom: 22px;
-  margin-left: 20px;
-  margin-right: 0;
+  margin: 22px 0 22px 20px;
 }
 
 .page-header__wrap {
- background-color: rgba(40, 54, 69, 0.3)
+  background-color: rgba(40, 54, 69, 0.3);
 }
 
-
 .page-header__wrap {
-    @include container ($mobile-width, 0);
+  @include container ($mobile-width, 0);
 }
 
 .page-header__toggle {
@@ -37,9 +31,7 @@
 
   .page-header__wrap {
     @include container (660px, 0)
-
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -48,6 +40,4 @@
     flex-direction: row;
     @include container (960px, 0);
   }
-
-
 }

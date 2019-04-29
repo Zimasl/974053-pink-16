@@ -2,21 +2,29 @@
   background-color: $primary-color;
 }
 
+.download-app__background {
+  display: block;
+  margin: 0 auto;
+}
+
 .download-app::before {
   content: "";
   display: block;
   width: 320px;
   height: 462px;
-  background:  url(../img/bg-back-mobile@1x.jpg) no-repeat center;
-  background-size: cover, contain;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-size: auto,cover;
   margin: 0 auto;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center;
+    background-size: contain;
+  }
 }
 
 .download-app__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   min-height: 271px;
   background-color: $second-color;
 }
@@ -33,17 +41,14 @@
   align-items: center;
   border: 3px solid $white;
   border-radius: 30px;
-  margin: 0 auto;
-  margin-top: 28px;
-  margin-bottom: 32px;
+  margin: 28px auto 32px;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
 }
 
 .download-app__stage {
-  @include container (320px, 0)
-  justify-content: space-around;
+  @include container (320px, 0) justify-content: space-around;
   align-items: center;
   display: flex;
   list-style: none;
@@ -51,13 +56,13 @@
 
 .download-app__text {
   width: 230px;
-
   color: $white;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   font-weight: 300;
   margin-bottom: 35px;
+
 }
 
 .download-app__icon {
@@ -67,27 +72,30 @@
 .download-app__icon--apple {
   width: 47px;
   height: 56px;
-  background: url(../img/logo-apple.svg) no-repeat center;
+  background: url("../img/logo-apple.svg") no-repeat center;
 }
 
 .download-app__icon--android {
   width: 43px;
   height: 47px;
-  background: url(../img/logo-android.svg) no-repeat center;
+  background: url("../img/logo-android.svg") no-repeat center;
 }
 
 .download-app__icon--microsoft {
   width: 44px;
   height: 41px;
-  background: url(../img/logo-microsoft.svg) no-repeat center;
+  background: url("../img/logo-microsoft.svg") no-repeat center;
 }
-
-
 @media (min-width:$tablet-width) {
   .download-app {
     display: flex;
     min-height: 660px;
-    background: url(../img/bg-back-tablet@1x.jpg) no-repeat center;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+    background-size: cover;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat center;
+      background-size: cover;
+    }
   }
 
   .download-app::before {
@@ -105,6 +113,16 @@
     font-weight: 300;
   }
 
+  .download-app__text {
+    margin: 44px 0 0;
+    font-size: 18px;
+    width: 295px;
+  }
+
+  .download-app__button {
+    margin-bottom: 52px;
+  }
+
   .download-app__content-wrapper {
     @include container ($tablet-width, 0)
   }
@@ -115,12 +133,14 @@
     background-color: transparent;
   }
 }
-
-
 @media (min-width:$desktop-width) {
   .download-app {
-    background-image: url(../img/bg-back-desktop@1x.jpg) no-repeat center;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center;
     background-size: cover;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat center;
+      background-size: cover;
+    }
   }
 
   .download-app__content-wrapper {
@@ -128,8 +148,7 @@
   }
 
   .download-app__content {
-    @include container ($desktop-width, 10px)
-    padding-right: 610px;
+    @include container ($desktop-width, 10px) padding-right: 610px;
   }
 
   .download-app__title {
