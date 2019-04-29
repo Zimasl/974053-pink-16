@@ -91,14 +91,11 @@
     display: block;
     width: 268px;
     height: 547px;
-    background: url(../img/iphone-screen-3-tablet@1x.png) no-repeat bottom;
-
+    background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat bottom;
   }
 
   .advanteges_item-wrap {
-
     @include container (660px, 0);
-
     position: relative;
     display: flex;
     flex-direction: column;
@@ -114,12 +111,10 @@
       text-align: left;
       margin: 21px 0 0;
     }
-
   }
 
   .advanteges__item h3 {
     text-align: left;
-
   }
 
   .advantege-picture {
@@ -141,6 +136,10 @@
 
   .advanteges__item-container {
     background-color: $bg-color;
+  }
+
+  .advanteges__item-container::after {
+    display: none;
   }
 
   .advanteges__item {
@@ -204,7 +203,6 @@
       bottom: 270px;
       left: 28px;
       background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat center;
-
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: url("../img/iphone-screen-2-desktop@2x.png") no-repeat center;
         background-size: cover;
@@ -225,7 +223,6 @@
       bottom: 270px;
       left: 28px;
       background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat center;
-
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: url("../img/iphone-screen-3-desktop@2x.png") no-repeat center;
         background-size: cover;
