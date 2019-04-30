@@ -56,6 +56,12 @@
     display: block;
   }
 
+.page-footer__social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   .page-footer__container {
     display: flex;
     justify-content: space-around;

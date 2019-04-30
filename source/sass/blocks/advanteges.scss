@@ -64,11 +64,18 @@
   margin: 0 auto 45px;
 }
 
-.advantege-picture {
-  display: block;
+.advanteges__smile {
+  height: 280px;
+  overflow: hidden;
   margin: 0 auto;
 }
+
+
 @media (min-width:$tablet-width) {
+  .advanteges__smile {
+    display: none;
+  }
+
   .advanteges__title-wrap {
     position: relative;
     width: 587px;
@@ -85,16 +92,18 @@
     display: none;
   }
 
-  .advanteges__item-container::after {
+  .advanteges__item-wrap::after {
     content: "";
     position: absolute;
     display: block;
     width: 268px;
     height: 547px;
+    bottom: 0;
+    left: 20px;
     background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat bottom;
   }
 
-  .advanteges_item-wrap {
+  .advanteges__item-wrap {
     @include container (660px, 0);
     position: relative;
     display: flex;
@@ -122,6 +131,10 @@
   }
 }
 @media (min-width:$desktop-width) {
+  .advanteges__item-wrap::after {
+    display: none;
+  }
+
   .advanteges__title-wrap {
     padding: 0;
     min-width: 733px;
@@ -146,7 +159,7 @@
     margin-left: 0;
   }
 
-  .advanteges_item-wrap {
+  .advanteges__item-wrap {
     display: flex;
     justify-content: space-around;
     @include container (940px, 0);
